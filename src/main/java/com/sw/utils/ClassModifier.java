@@ -60,7 +60,7 @@ public class ClassModifier {
         //真是的常量起始位置
         int offset = CONSTANT_POOL_COUNT_INDEX + u2;
         for (int i = 1; i < cpc; i++) {
-            int tag = ByteUtils.byte2Int(classByte, offset, u2);
+            int tag = ByteUtils.byte2Int(classByte, offset, u1);
             if (tag == CONSTANT_UTF8_INFO) {
                 int length = ByteUtils.byte2Int(classByte, offset + u1, u2);
                 offset += u1 + u2;
