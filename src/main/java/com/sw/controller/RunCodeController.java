@@ -19,11 +19,15 @@ public class RunCodeController {
     @Autowired
     private ExecuteStringSourceService executeStringSourceService;
 
-    private static final String defaultSource = "public class Run {\n"
-            + "    public static void main(String[] args) {\n"
-            + "        \n"
-            + "    }\n"
-            + "}";
+    private static final String defaultSource =
+            "import java.util.Scanner;\n" +
+            "\n" +
+            "public class Run {\n" +
+            "    public static void main(String[] args) {\n" +
+            "        Scanner in = new Scanner(System.in);\n" +
+            "        System.out.println(in.next());\n" +
+            "    }\n" +
+            "}";
 
     @GetMapping
     public String test(Model model) {
