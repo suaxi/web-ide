@@ -12,7 +12,7 @@ import java.util.Properties;
 /**
  * @author Wang Hao
  * @date 2023/7/2 18:50
- * @description
+ * @description 替换原 System 类的 InputStream PrintStream，并对 exit 等方法做限制
  */
 public class HackSystem {
 

@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 /**
  * @author Wang Hao
  * @date 2023/7/3 20:39
- * @description
+ * @description 将字符串形式的源码编译为字节数组
  */
 public class StringSourceCompiler {
 

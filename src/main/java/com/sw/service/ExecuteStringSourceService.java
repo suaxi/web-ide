@@ -13,7 +13,7 @@ import java.util.concurrent.*;
 /**
  * @author Wang Hao
  * @date 2023/7/3 20:28
- * @description
+ * @description 将字节码加载进 JVM，并执行其 mian 方法，收集运行结果（System.out 和 System.err）
  */
 @Service
 public class ExecuteStringSourceService {
